@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Tooltip = ({ position, text, children }) => {
   const [isVisible, setIsVisible] = useState(false);
-
+//defined usestate for keeping the state of entering a mouse event in a bollean context
   const handleMouseEnter = () => {
     setIsVisible(true);
   };
@@ -10,7 +10,7 @@ const Tooltip = ({ position, text, children }) => {
   const handleMouseLeave = () => {
     setIsVisible(false);
   };
-
+//switch case for handling the position of the switch case in the hovering scenario
   const getTooltipStyle = () => {
     switch (position) {
       case "top":
@@ -48,6 +48,7 @@ const Tooltip = ({ position, text, children }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
+
       {children}
       {isVisible && text && (
         <div
