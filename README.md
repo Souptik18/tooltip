@@ -1,8 +1,19 @@
-# React + Vite
+This optimized Tooltip component efficiently manages tooltip visibility and positioning based on provided props.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+It utilizes memoization to cache the CSS style calculation, reducing unnecessary recalculations.
+
+
+The tooltip is displayed on hover and hidden when the mouse leaves, ensuring a responsive user experience. 
+
+Positioning is dynamically adjusted according to 
+the specified position prop, 
+allowing for flexible tooltip placement.
+
+
+
+
+
+
